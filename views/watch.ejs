@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= video.title %></title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1><%= video.title %></h1>
+  <video src="/videos/<%= video.filename %>" controls autoplay></video>
+  <p><%= video.description %></p>
+  <a class="back-link" href="/">Voltar para a Home</a>
+</body>
+</html>

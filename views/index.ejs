@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mini YouTube</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Mini YouTube</h1>
+  <a class="upload-link" href="/upload">Enviar vídeo</a>
+
+  <div class="video-list">
+    <% videos.forEach(video => { %>
+      <div class="video-item">
+        <video src="/videos/<%= video.filename %>" controls></video>
+        <h3><a href="/watch/<%= video.id %>"><%= video.title %></a></h3>
+        <p><%= video.description %></p>
+      </div>
+    <% }) %>
+  </div>
+</body>
+</html>

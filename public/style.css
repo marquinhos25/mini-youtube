@@ -1,0 +1,45 @@
+body {
+  background-color: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  color: #ff4444;
+}
+
+.video-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.video-item {
+  background: #222;
+  padding: 10px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+a {
+  color: #ff4444;
+  text-decoration: none;
+}
+
+.upload-link, .back-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #ff4444;
+  color: white;
+  border-radius: 5px;
+}
